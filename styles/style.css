@@ -151,10 +151,6 @@ ul {
     text-transform: capitalize;
 }
 
-.portfolio__skills-projects {
-    max-width: 100%;
-}
-
 .portfolio__project {
     display: flex;
     align-items: center;
