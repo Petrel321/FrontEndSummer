@@ -18,25 +18,22 @@ ul {
 
 .container {
     margin: 0 auto;
-    max-width: 1180px;
-    padding: 0 10px;
+    max-width: 73.75rem;
+    padding: 0 0.625rem;
 }
 
 
 /*Header*/
 .header {
     background-color: #3f3f3f;
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 0 1rem 1rem;
 }
 
 .header__nav-name {
     display: inline-block;
     color: white;
     cursor: pointer;
-}
-
-.header__nav-name>span {
-    background-color: #000;
+    font-size: 2rem;
 }
 
 .header__nav {
@@ -48,15 +45,17 @@ ul {
 .header__nav-menu {
     display: inline-flex;
     justify-content: center;
-    gap: 14px;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .header__nav-item {
     display: inline-block;
     text-transform: capitalize;
-    padding: 20px 6px;
+    padding: 1.25rem 0.6rem;
     color: #fff;
+    font-size: 1.2rem;
+    transition: 0.7s background-color, 0.7s color;
 }
 
 .header__nav-item:hover {
@@ -68,81 +67,140 @@ ul {
 
 .main {
     min-height: 100vh;
-    padding: 60px 0;
+    padding: 7rem 0;
 }
 
 .main h2 {
-    font-size: 50px;
+    font-size: 2.2rem;
     text-transform: capitalize;
     color: #1f1f1f;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .main > section:not(:last-child) {
-    margin-bottom: 120px;
+    margin-bottom: 7.5rem;
 }
 
 .main__about-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .main__about-photo {
-    max-width: 50%;
-    min-width: 300px;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
+    max-width: 45%;
+    min-width: 400px;
+    border-radius: 0.5rem;
 }
 
 .main__about-text {
     width: 48%;
 }
 
-.main__about-text > p:first-child {
+.main__about-text > p:nth-child(1) {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 40px;
+    font-size: 1rem;
+    margin-bottom: 3rem;
 }
 
 .main__about-text > p:nth-child(2) {
-    font-size: 40px;
+    font-size: 2.5rem;
     text-transform: capitalize;
+    margin-bottom: 3rem;
+}
+
+.main__about-text > p:nth-child(3) {
+    font-size: 1.25rem;
 }
 
 .main__portfolio-skills {
     display: flex;
-    justify-content: center;
-    gap: 120px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 6.25rem;
+    gap: 5rem;
 }
 
 .portfolio__skills-content {
-    max-width: 50%;
+    max-width: 45%;
 }
 
-.portfolio__skills-header {
+@media (max-width: 850px) {
+    .portfolio__skills-content {
+        max-width: 100%;
+    }
+}
+
+.portfolio__subheader {
     text-transform: capitalize;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .portfolio__skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .portfolio__skills-item {
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     border: 1px solid #9f9f9f;
     border-radius: 20px;
+    text-transform: capitalize;
+}
+
+.portfolio__skills-projects {
+    max-width: 100%;
+}
+
+.portfolio__project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio__project:nth-child(2n + 1) {
+    background-color: #e5e5e5;
+}
+
+.portfolio__project:nth-child(2n + 1) a {
+    background-color: #fff;
+}
+
+.portfolio__project:nth-child(2n) {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+}
+
+.portfolio__project-image {
+    min-width: 8rem;
+    min-height: 8rem;
+    background-image: url('../images/projects/api.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.portfolio__project-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.portfolio__project-description {
+    margin: 1rem 0;
 }
 
 .main__hire p {
-    font-size: 18.72px;
-    margin-bottom: 16px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .main__list {
@@ -155,7 +213,7 @@ ul {
 }
 
 .main__list-item:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -163,35 +221,97 @@ ul {
 
 .footer {
     background-color: #1f1f1f;
-    border-radius: 12px 12px 0 0;
-    padding: 40px 0;
+    border-radius: 1rem 1rem 0 0;
+    padding: 2.5rem 0;
     text-align: center;
 }
 
-.footer__contact {
-    margin-bottom: 40px;
+.footer__contacts {
+    margin-bottom: 2.5rem;
 }
 
-.footer__contact-header {
-    font-size: 50px;
+.footer__contacts-header {
+    font-size: 3.125rem;
     color: #fff;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
-.footer__contact-body {
-    font-size: 20px;
+.footer__contacts-text {
+    font-size: 1.25rem;
     color: #fff;
+    margin-bottom: 2rem;
 }
 
 .footer__contacts-list {
     display: inline-flex;
-    gap: 40px;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .footer__contacts-link {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+    padding: 0.625rem 2rem;
     background-color: #fff;
-    padding: 10px 20px;
-    border-radius: 16px;
+    border-radius: 1.5rem;
+    line-height: 1rem;
+    transition: 1s font-size;
+    text-align: center;
+
+}
+
+.footer__contacts-link:hover {
+    font-size: 1rem;
+}
+
+.footer__contacts-link:hover::before {
+    display: none;
+}
+
+#gh-link::before {
+    content: '';
+    position: absolute;
+    height: 2.25rem;
+    width: 2.25rem;
+    background-image: url('../images/icons/github.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#tg-link::before {
+    content: '';
+    position: absolute;
+    height: 2.25rem;
+    width: 2.25rem;
+    background-image: url('../images/icons/tg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#email::before {
+    content: '';
+    position: absolute;
+    height: 2.25rem;
+    width: 2.25rem;
+    background-image: url('../images/icons/email.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
 }
