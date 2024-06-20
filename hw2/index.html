@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <title>Jokes</title>
+</head>
+<body>
+    <noscript>
+        <p>JavaScript is required for this page to work properly.</p>
+    </noscript>
+    <main>
+        <div class="container">
+            <section class="comics">
+                <h1 class="comics__header">Hello, dear friend, here you can find fantastic comic!</h1>
+                <article class="comics__comic">
+                    <button id="fetch__comic" onclick="fetchComic()">Fetch comic!</button>
+                    <p id="comic__loader" class="hidden">Loading....</p>
+                    <div id="header" class="comic__header hidden">
+                        <h2 id="comic__title"></h2>
+                        <p id="comic__date"></p>
+                    </div>
+                    <img id="comic__image" class="hidden" src="" alt="" draggable="false">
+                </article>
+            </section>
+        </div>
+        
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
