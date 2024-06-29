@@ -5,7 +5,7 @@ import terser from '@rollup/plugin-terser';
 
 
 export default {
-    input: 'hw2/scripts/script.ts',
+    input: 'src/script.ts',
     output: { file: 'dist/bundle.js' },
     plugins: [
         typescript(),
