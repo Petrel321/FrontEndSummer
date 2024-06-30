@@ -11,7 +11,7 @@ interface ContactLinkProps {
 const ContactLink: React.FC<ContactLinkProps> = ({ id, href, content }) => {
     return (
         <li className="footer__contacts-item">
-            <a id={id} href={href} className="footer__contacts-link" target="_blank" rel="noreferrer">{content}</a>
+            <a id={id} href={href} className="footer__contacts-link" target="_blank">{content}</a>
         </li>
     );
 };

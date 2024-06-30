@@ -8,7 +8,7 @@ const About: React.FC = () => {
             <div className="container">
                 <h2>About me</h2>
                 <div className="main__about-content">
-                    <img className="main__about-photo" src="images/person.jpg" alt="Me" draggable="false"></img>
+                    <img className="main__about-photo" src="images/person.jpg" alt="My photo" draggable="false"></img>
                     <div className="main__about-text">
                         <p>Hi there</p>
                         <p>I'm Ivan Sannikov <br></br> Information security specialist </p>
