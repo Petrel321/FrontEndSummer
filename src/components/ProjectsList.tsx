@@ -3,13 +3,13 @@ import Project from './Project';
 import '../styles/ProjectsList.css';
 
 
-interface Project {
+interface ProjectI {
     name: string;
     description: string;
 }
 
 interface ProjectsListProps {
-    projects: Project[];
+    projects: ProjectI[];
 }
 
 const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
