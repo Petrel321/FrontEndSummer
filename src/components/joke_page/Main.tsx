@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from "@/styles/joke_page/Main.module.css";
 import { ComicData } from './interfaces';
+import Image from 'next/image';
 import dayjs from 'dayjs'
 import relativeTime from 'dayjs/plugin/relativeTime';
 dayjs.extend(relativeTime);
@@ -71,7 +72,7 @@ const Main: React.FC = () => {
                                         Published: {dayjs(`${parseInt(comicData.year)}-${parseInt(comicData.month)}-${parseInt(comicData.day)}`).fromNow()}
                                     </p>
                                 </div>
-                                <img id={`${styles.comic__image}`} src={comicData.img} alt={comicData.alt} draggable="false"></img>
+                                <Image id={`${styles.comic__image}`} src={`/FrontEndSummer/${comicData.img}`} alt={comicData.alt} draggable="false" />
                             </>
                         )}
                     </article>

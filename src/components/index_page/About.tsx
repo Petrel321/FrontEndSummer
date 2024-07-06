@@ -9,7 +9,7 @@ const About: React.FC = () => {
             <div className="container">
                 <h2>About me</h2>
                 <div className={`${styles.main__about_content}`}>
-                    <Image className={`${styles.main__about_photo}`} src="/person.jpg" width={400} height={500} alt="Me" draggable="false" />
+                    <Image className={`${styles.main__about_photo}`} src="/FrontEndSummer/person.jpg" width={400} height={500} alt="Me" draggable="false" />
                     <div className={`${styles.main__about_text}`}>
                         <p>Hi there</p>
                         <p>I'm Ivan Sannikov <br></br> Information security specialist </p>
