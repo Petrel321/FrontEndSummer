@@ -72,7 +72,7 @@ const Main: React.FC = () => {
                                         Published: {dayjs(`${parseInt(comicData.year)}-${parseInt(comicData.month)}-${parseInt(comicData.day)}`).fromNow()}
                                     </p>
                                 </div>
-                                <Image id={`${styles.comic__image}`} src={`/FrontEndSummer/${comicData.img}`} alt={comicData.alt} draggable="false" />
+                                <Image id={`${styles.comic__image}`} src={comicData.img} width={655} height={277} alt={comicData.alt} draggable="false" />
                             </>
                         )}
                     </article>

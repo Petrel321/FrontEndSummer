@@ -22,17 +22,17 @@ const projects = [
 
 const Portfolio: React.FC = () => {
     return (
-        <section id="portfolio" className={`${styles.main__portfolio}`}>
+        <section id="portfolio" className={styles.main__portfolio}>
             <div className="container">
                 <h2>Portfolio</h2>
-                <div className={`${styles.main__portfolio_content}`}>
-                    <div className={`${styles.main__portfolio_skills}`}>
+                <div className={styles.main__portfolio_content}>
+                    <div className={styles.main__portfolio_skills}>
                         <SkillsList name={"Core skills"} skills={coreSkills} />
                         <SkillsList name={"Other skills"} skills={otherSkills} />
                     </div>
-                    <div className={`${styles.main__portfolio_projects}`}>
-                        <div className={`${styles.portfolio__projects_content}`}>
-                            <h3 className={`${styles.portfolio__subheader}`}>Projects</h3>
+                    <div className={styles.main__portfolio_projects}>
+                        <div className={styles.portfolio__projects_content}>
+                            <h3 className={styles.portfolio__subheader}>Projects</h3>
                             <ProjectsList projects={projects}/>
                         </div>
                     </div>

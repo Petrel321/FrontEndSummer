@@ -14,7 +14,7 @@ interface ProjectsListProps {
 
 const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
     return (
-        <ul className={`${styles.portfolio__project_list}`}>
+        <ul className={styles.portfolio__project_list}>
             {projects.map((project, index) => (
                 <Project key={index} name={project.name} description={project.description} />
             ))}

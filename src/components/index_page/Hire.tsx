@@ -11,11 +11,11 @@ const abilities = [
 
 const Hire: React.FC = () => {
     return (
-        <section id="hire-me" className={`${styles.main__hire}`}>
+        <section id="hire-me" className={styles.main__hire}>
             <div className="container">
                 <h2>Hire me</h2>
                 <p>Here are some of the things I can help you with:</p>
-                <ul className={`${styles.main__list}`}>
+                <ul className={styles.main__list}>
                     {abilities.map((ability, index) => (
                         <Ability key={index} name={ability} />
                     ))}

@@ -8,7 +8,7 @@ interface AbilityProps {
 
 const Ability: React.FC<AbilityProps> = ({ name }) => {
     return (
-        <li className={`${styles.main__list_item}`}><span>{name}</span></li>
+        <li className={styles.main__list_item}><span>{name}</span></li>
     );
 };
 

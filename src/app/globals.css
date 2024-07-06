@@ -31,7 +31,7 @@ ul {
     position: absolute;
     height: 2.25rem;
     width: 2.25rem;
-    background-image: url('/github.png');
+    background-image: url('/FrontEndSummer/github.png');
     background-repeat: no-repeat;
     background-size: cover;
     left: 0;
@@ -46,7 +46,7 @@ ul {
     position: absolute;
     height: 2.25rem;
     width: 2.25rem;
-    background-image: url('/tg.png');
+    background-image: url('/FrontEndSummer/tg.png');
     background-repeat: no-repeat;
     background-size: cover;
     left: 0;
@@ -61,7 +61,7 @@ ul {
     position: absolute;
     height: 2.25rem;
     width: 2.25rem;
-    background-image: url('/email.png');
+    background-image: url('/FrontEndSummer/email.png');
     background-repeat: no-repeat;
     background-size: cover;
     left: 0;

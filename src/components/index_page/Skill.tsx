@@ -8,7 +8,7 @@ interface SkillProps {
 
 const Skill: React.FC<SkillProps> = ({ name }) => {
     return (
-        <li className={`${styles.portfolio__skills_item}`}>
+        <li className={styles.portfolio__skills_item}>
             <span>{name}</span>
         </li>
     );

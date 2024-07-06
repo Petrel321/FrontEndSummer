@@ -7,7 +7,7 @@ import styles from '@/styles/index_page/Main.module.css';
 
 const Main: React.FC = () => {
     return (
-        <main className={`${styles.main}`}>
+        <main className={styles.main}>
             <About />
             <Portfolio />
             <Hire />
