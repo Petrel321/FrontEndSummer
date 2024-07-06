@@ -1,0 +1,21 @@
+.footer__contacts_link {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+    padding: 0.625rem 2rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    line-height: 1rem;
+    transition: 1s font-size;
+    text-align: center;
+
+}
+
+.footer__contacts_link:hover {
+    font-size: 1rem;
+}
+
+.footer__contacts_link:hover::before {
+    display: none;
+}

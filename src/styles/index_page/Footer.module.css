@@ -1,0 +1,25 @@
+.footer {
+    background-color: #1f1f1f;
+    border-radius: 1rem 1rem 0 0;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.footer__contacts_header {
+    font-size: 3.125rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.footer__contacts_text {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.footer__contacts_list {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

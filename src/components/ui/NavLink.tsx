@@ -1,5 +1,6 @@
 import React from 'react';
-import '../../styles/NavLink.css';
+import styles from '@/styles/index_page/NavLink.module.css';
+
 
 interface NavLinkProps {
     href: string;
@@ -8,8 +9,8 @@ interface NavLinkProps {
 
 const NavLink: React.FC<NavLinkProps> = ({ href, content }) => {
     return (
-        <li className="header__nav-list">
-            <a href={href} className="header__nav-item">{content}</a>
+        <li>
+            <a href={href} className={`${styles.header__nav_item}`}>{content}</a>
         </li>
     );
 };

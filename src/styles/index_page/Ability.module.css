@@ -1,0 +1,8 @@
+.main__list_item {
+    position: relative;
+    left: 36px;
+}
+
+.main__list_item:not(:last-child) {
+    margin-bottom: 0.5rem;
+}

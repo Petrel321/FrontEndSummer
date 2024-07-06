@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/ContactLink.css';
+import styles from '@/styles/index_page/ContactLink.module.css';
 
 
 interface ContactLinkProps {
@@ -10,8 +10,8 @@ interface ContactLinkProps {
 
 const ContactLink: React.FC<ContactLinkProps> = ({ id, href, content }) => {
     return (
-        <li className="footer__contacts-item">
-            <a id={id} href={href} className="footer__contacts-link" target="_blank" rel="noreferrer">{content}</a>
+        <li className={`${styles.footer__contacts_item}`}>
+            <a id={id} href={href} className={`${styles.footer__contacts_link}`} target="_blank" rel="noreferrer">{content}</a>
         </li>
     );
 };

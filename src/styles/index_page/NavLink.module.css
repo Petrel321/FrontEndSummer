@@ -1,0 +1,13 @@
+.header__nav_item {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 1.25rem 0.6rem;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 0.7s background-color, 0.7s color;
+}
+
+.header__nav_item:hover {
+    background-color: #fff;
+    color: #000;
+}
