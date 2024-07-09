@@ -32,7 +32,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/pages/_document.ts"  ],
   "exclude": [
     "node_modules"
   ]
