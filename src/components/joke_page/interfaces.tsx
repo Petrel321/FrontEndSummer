@@ -11,3 +11,8 @@ export interface ComicData {
     title: string;
     day: string;
 }
+
+export interface MainProps {
+    comicData: ComicData | null;
+    error: string | null;
+}
