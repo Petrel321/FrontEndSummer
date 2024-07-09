@@ -1,6 +1,9 @@
 import Main from '@/components/joke_page/Main';
 import { ComicData } from '@/components/joke_page/interfaces';
+import Head from 'next/head';
 import React from 'react';
+import { metadata } from '../layout';
+
 
 const fetchComicId = async (email: string): Promise<string> => {
     const emailParam = new URLSearchParams({ email });
@@ -38,10 +41,15 @@ const Joke: React.FC<JokeProps> = async () => {
 
     return (
         <>
-            <noscript>
-                <p>JavaScript is required for this page to work properly.</p>
-            </noscript>
-            <Main comicData={comicData} error={error} />
+            <Head>
+                <title>{metadata.joke.title}</title>
+            </Head>
+            <main>
+                <noscript>
+                    <p>JavaScript is required for this page to work properly.</p>
+                </noscript>
+                <Main comicData={comicData} error={error} />
+            </main>
         </>
     );
 }
