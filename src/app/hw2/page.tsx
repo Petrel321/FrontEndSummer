@@ -49,7 +49,7 @@ export default async function Joke() {
       </Head>
       <main>
         <noscript>
-          <p>JavaScript is required for this page to work properly.</p>
+          <p>JavaScript is required for this page to work properly</p>
         </noscript>
         <Main comicData={comicData} error={error} />
       </main>
