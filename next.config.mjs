@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: "export",
-  basePath: "/FrontEndSummer",
+  output: 'export',
+  basePath: '/FrontEndSummer',
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -19,7 +19,7 @@ const nextConfig = {
         pathname: '/comics/**',
       },
     ],
-  }
+  },
 };
 
 export default nextConfig;

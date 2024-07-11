@@ -1,33 +1,33 @@
 .main__about_content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .main__about_photo {
-    max-width: 45%;
-    min-width: 400px;
-    border-radius: 0.5rem;
+  max-width: 45%;
+  min-width: 400px;
+  border-radius: 0.5rem;
 }
 
 .main__about_text {
-    width: 48%;
+  width: 48%;
 }
 
 .main__about_text > p:nth-child(1) {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1rem;
-    margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 3rem;
 }
 
 .main__about_text > p:nth-child(2) {
-    font-size: 2.5rem;
-    text-transform: capitalize;
-    margin-bottom: 3rem;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
 }
 
 .main__about_text > p:nth-child(3) {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }

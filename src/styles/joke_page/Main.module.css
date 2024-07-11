@@ -1,62 +1,66 @@
 .comics {
-    padding: 1em 0;
+  padding: 1em 0;
 }
 
 .comics__header {
-    text-align: center;
-    margin-bottom: 1.5em;
+  text-align: center;
+  margin-bottom: 1.5em;
 }
 
 .comics__comic {
-    max-width: fit-content;
-    margin: 0 auto;
-    padding: 2em 4em;
-    background-color: #3f3f3f;
-    border-radius: 32px;
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 2em 4em;
+  background-color: #3f3f3f;
+  border-radius: 32px;
 }
 
 .comic__header {
-    min-width: 100%;
-    display: flex;
-    gap: 0.2em;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5em;
-    
+  min-width: 100%;
+  display: flex;
+  gap: 0.2em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
 }
 
 #comic__image {
-    margin-bottom: 1.2em;
-    max-width: 100%;
-    height: auto;
+  margin-bottom: 1.2em;
+  max-width: 100%;
+  height: auto;
 }
 
 #fetch__comic {
-    background-color: transparent;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: 2px solid #fff;
-    border-radius: 0.5em;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #fff;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
 }
 
-#comic__title, #comic__loader,
-#fetch__comic, #comic__date {
-    color: #fff;
+#comic__title,
+#comic__loader,
+#fetch__comic,
+#comic__date {
+  color: #fff;
 }
 
 #fetch__comic:hover {
-    background-color: #555;
-    border-color: #555;
+  background-color: #555;
+  border-color: #555;
 }
 
 @media (max-width: 500px) {
-    .comics__comic {
-        padding: 1em 2em;
-    }
-    #comic__image {
-        margin-bottom: 0.6em;
-    }
+  .comics__comic {
+    padding: 1em 2em;
+  }
+  #comic__image {
+    margin-bottom: 0.6em;
+  }
 }
