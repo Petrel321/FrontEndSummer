@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  basePath: '/FrontEndSummer',
+  basePath: '',
   images: {
     unoptimized: true,
     remotePatterns: [

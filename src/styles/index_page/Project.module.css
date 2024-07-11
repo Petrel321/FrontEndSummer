@@ -23,7 +23,7 @@
 .portfolio__project_image {
   min-width: 8rem;
   min-height: 8rem;
-  background-image: url('/FrontEndSummer/api.webp');
+  background-image: url('/api.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

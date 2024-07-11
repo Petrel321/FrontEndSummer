@@ -10,7 +10,7 @@ const About: React.FC = () => {
         <div className={styles.main__about_content}>
           <Image
             className={styles.main__about_photo}
-            src="/FrontEndSummer/person.jpg"
+            src="/person.jpg"
             width={400}
             height={500}
             alt="Me"
